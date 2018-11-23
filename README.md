@@ -2,11 +2,11 @@
 
 实现类似memcache缓存功能，可配置支持以下功能
 
-- [ ] 支持缓存数据持久化
-  - [ ] Storage localStorage ~ 5MB
-  - [ ] Session sessionStorage
+- [-] 支持缓存数据持久化
+  - [x] Storage localStorage ~ 5MB
+  - [x] Session sessionStorage
   - [ ] 当不能支持时(空间已满)，降级支持
-- [ ] 支持配置缓存有效时间 lscache
+- [x] 支持配置缓存有效时间 lscache
 - [ ] 支持配置缓存api接口数据 fetch-unless-cached
 - [ ] 支持最近最少使用原则 js-lru
 
