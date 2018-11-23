@@ -1,0 +1,67 @@
+{
+  "name": "kit-cache",
+  "version": "0.0.1",
+  "description": "缓存系统",
+  "main": "lib/index.js",
+  "options": {
+    "mocha": "--harmony --require babel-core/register test/**/*.spec.js"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "benchmark": "npm test && node benchmark",
+    "build": "rimraf lib && ./node_modules/.bin/babel src -d lib --ignore test",
+    "prepublish": "npm run build",
+    "test": "./node_modules/.bin/_mocha $npm_package_options_mocha",
+    "lint": "./node_modules/.bin/eslint --ext .js src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskit/kit-cache.git"
+  },
+  "keywords": [
+    "query-cache",
+    "cache",
+    "storage",
+    "jskit"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jskit/kit-cache/issues"
+  },
+  "homepage": "https://github.com/jskit/kit-cache#readme",
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "assets": "^3.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-generator": "^6.26.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-template": "^6.26.0",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "babylon": "^6.18.0",
+    "benchmark": "^2.1.4",
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jsdom": "^13.0.0",
+    "mocha": "^5.0.0",
+    "opn": "^5.2.0",
+    "rimraf": "^2.6.2"
+  }
+}

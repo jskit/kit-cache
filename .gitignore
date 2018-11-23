@@ -57,3 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+resources
+lib/*
+yarn.lock
+package-lock.json
